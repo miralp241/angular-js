@@ -1,0 +1,7 @@
+<ul>
+  <li ng-repeat="item in dir.items">
+    {{ item.name }}, {{ item.short_name }}, {{item.description}}
+    <button class="btn btn-danger" ng-click="dir.onRemove({index: $index});">Don't want this one!</button>
+  </li>
+</ul>
+<!-- <div ng-if="dir.isNothingFound()">Nothing found!</div> -->
